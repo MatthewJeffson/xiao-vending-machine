@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Wio Vending Dashboard Mock</title>
+  <style>
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:#101522;color:#f5f7fb}main{max-width:1180px;margin:0 auto;padding:32px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.card{background:#182033;border:1px solid #2d3852;border-radius:18px;padding:20px;box-shadow:0 12px 30px #0005}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.product{border:1px solid #3a486a;border-radius:14px;padding:16px;background:#12192a}.product b{display:block;margin-bottom:8px}.status{display:flex;gap:12px;flex-wrap:wrap}.pill{border-radius:999px;padding:8px 12px;background:#24304a}.ok{background:#123b2d}.warn{background:#4a3514}.btn{display:inline-block;padding:12px 16px;border-radius:12px;background:#36d399;color:#06110c;font-weight:700;margin-right:8px}.danger{background:#ff6692;color:#26050e}.mono{font-family:ui-monospace, SFMono-Regular, Menlo, monospace;color:#a7f3d0}footer{margin-top:24px;color:#9aa7bd;font-size:14px}@media(max-width:840px){.grid{grid-template-columns:1fr}.products{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Open Wio Vending Dashboard Mock</h1>
+  <p>This static mock is for documenting the optional PC-side purchase/RFID-writing flow. It has no backend dependency.</p>
+  <div class="status">
+    <span class="pill ok">Machine online</span>
+    <span class="pill ok">RFID writer ready</span>
+    <span class="pill warn">Slot A low stock</span>
+  </div>
+  <div class="grid" style="margin-top:20px">
+    <section class="card">
+      <h2>Products</h2>
+      <div class="products">
+        <div class="product"><b>XIAO RP2040</b><span>Slot A</span><p>Stock: 3</p><button class="btn">Select</button></div>
+        <div class="product"><b>XIAO ESP32-C3</b><span>Slot B</span><p>Stock: 8</p><button class="btn">Select</button></div>
+        <div class="product"><b>XIAO nRF52840</b><span>Slot C</span><p>Stock: 5</p><button class="btn">Select</button></div>
+      </div>
+    </section>
+    <aside class="card">
+      <h2>Order</h2>
+      <p>Product: <b>XIAO RP2040</b></p>
+      <p>Qty: <b>1</b></p>
+      <p>Total: <b>$6.90</b></p>
+      <a class="btn">Write TRUE Card</a><a class="btn danger">Cancel</a>
+      <h3>Payload</h3>
+      <pre class="mono">TOKEN=TRUE
+SKU=XIAO-RP2040
+QTY=1
+TXN=DEMO-0001</pre>
+    </aside>
+  </div>
+  <footer>MIT-licensed static mock. Replace with your own backend/payment/RFID writer implementation.</footer>
+</main>
+</body>
+</html>

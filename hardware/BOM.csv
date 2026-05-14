@@ -1,0 +1,11 @@
+Category,Part,Qty,Required,Notes
+Controller,Seeed Studio Wio Terminal,1,Yes,Main controller and LCD UI
+Input,Grove NFC/RFID reader,1,Optional,Use for real card/token validation
+Actuator,STS3215 serial bus servo,1-2,Optional,Gate actuator; simulation works without servo
+Power,External 5-7.4V servo power supply,1,Yes for servo,Do not power servo from Wio Terminal regulator
+Power,Common ground jumper,1,Yes for servo,Connect Wio Terminal GND to servo supply GND
+Mechanical,PETG product holder,1,Yes,Custom printed part
+Mechanical,PETG L-shaped servo arm,1,Yes for servo,Custom printed part
+Mechanical,Acrylic window,1,Optional,Inventory visibility
+Mechanical,M3 screws and inserts,Assorted,Yes,Serviceable mechanical assembly
+Product,Seeed XIAO board/package,3+,Yes,Test payload for the column

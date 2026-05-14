@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-label="Wiring reference">
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#111"/></marker><style>.box{fill:#fff;stroke:#111;stroke-width:2}.t{font:700 22px sans-serif}.s{font:16px sans-serif}.n{font:13px sans-serif;fill:#555}.wire{stroke:#111;stroke-width:3;fill:none;marker-end:url(#arrow)}</style></defs>
+  <rect width="1100" height="520" fill="#f6f8fb"/><text x="44" y="52" class="t">Wiring Reference</text>
+  <rect x="80" y="110" width="260" height="240" rx="18" class="box"/><text x="132" y="155" class="s">Wio Terminal</text><text x="110" y="205" class="n">Grove I2C: RFID reader</text><text x="110" y="235" class="n">Grove UART/Serial1: servo signal</text><text x="110" y="265" class="n">GND: common ground</text><text x="110" y="295" class="n">USB-C: controller power</text>
+  <rect x="480" y="90" width="220" height="100" rx="18" class="box"/><text x="528" y="135" class="s">Grove RFID</text><text x="510" y="165" class="n">I2C SDA/SCL + 5V/GND</text>
+  <rect x="480" y="250" width="220" height="100" rx="18" class="box"/><text x="520" y="295" class="s">Servo Adapter</text><text x="510" y="325" class="n">Signal + common GND</text>
+  <rect x="820" y="250" width="220" height="100" rx="18" class="box"/><text x="860" y="295" class="s">STS3215 Bus</text><text x="850" y="325" class="n">IDs 1..N daisy chained</text>
+  <rect x="820" y="390" width="220" height="80" rx="18" class="box"/><text x="860" y="435" class="s">5-7.4V Supply</text>
+  <path d="M340 180 C400 165 420 140 480 140" class="wire"/><text x="380" y="150" class="n">I2C</text><path d="M340 270 C400 282 420 300 480 300" class="wire"/><text x="380" y="302" class="n">UART</text><path d="M700 300 L820 300" class="wire"/><text x="735" y="292" class="n">serial bus</text><path d="M930 390 L930 350" class="wire"/><text x="945" y="372" class="n">V+</text><path d="M820 425 C600 425 500 385 320 310" class="wire"/><text x="610" y="415" class="n">common GND</text>
+  <text x="80" y="430" class="n">Safety note: keep servo power separate from the Wio Terminal regulator; only share ground.</text>
+</svg>
